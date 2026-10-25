@@ -1,203 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikita Utkin - DevOps Engineer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Портфолио Никиты Уткина: практические проекты по Docker, Docker Compose, Nginx и автоматизации.">
+  <title>Никита Уткин — DevOps-портфолио</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="navbar-logo">N.U.</div>
-        <ul class="navbar-links">
-            <li><a href="#hero" class="nav-link">Главная</a></li>
-            <li><a href="#about" class="nav-link">Обо мне</a></li>
-            <li><a href="#work" class="nav-link">Как работает</a></li>
-            <li><a href="#projects" class="nav-link">Проекты</a></li>
-        </ul>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Основная навигация">
+      <a class="brand" href="#top" aria-label="Никита Уткин — на главную">NU<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Открыть меню</span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">Обо мне</a></li><li><a href="#projects">Проекты</a></li><li><a href="#stack">Инструменты</a></li>
+        <li><a class="nav-cta" href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+      </ul>
     </nav>
-
-    <header class="hero" id="hero">
-        <div class="hero-container">
-            <div class="hero-badge">DevOps Engineer</div>
-            <h1 class="hero-name">Nikita<br>Utkin</h1>
-            <h2 class="hero-title">Junior DevOps Engineer</h2>
-            <p class="hero-subtitle">Automating infrastructure • Learning fast and reliable code delivery</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Мои проекты →</a>
-                <a href="#contact" class="btn btn-secondary">Контакты</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="about" id="about">
-        <div class="section-header">
-            <h2 class="section-title">Обо мне</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>Привет! Я Никита, Junior DevOps Engineer, который увлечен автоматизацией и надежностью ПО. Я работаю с Docker, Kubernetes, CI/CD пайплайнами и инфраструктурой в облаке.</p>
-                <p>Мое'objectif — создавать эффективные и безопасные системы доставки кода, обеспечивая бесперебойную работу сервисов. Я постоянно развиваю свои навыки и отслеживаю последние тренды в индустрии.</p>
-                <div class="skills-tags">
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Kubernetes</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">GitHub Actions</span>
-                    <span class="skill-tag">Terraform</span>
-<section class="work" id="work">
-        <div class="section-header">
-            <h2 class="section-title">Как работает DevOps</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="terminals-container">
-            <div class="terminal-card" data-terminal="1">
-                <div class="terminal-header">
-                    <span class="terminal-dot active"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <h3>Docker Compose Up</h3>
-                </div>
-                <div class="terminal-body">
-                    Автоматическое поднятие контейнеров с помощью docker compose up
-                </div>
-                <div class="terminal-label">Auto-typing effect</div>
-                <div class="terminal-footer">
-                    <button class="terminal-replay">Replay</button>
-                </div>
-            </div>
-            <div class="terminal-card" data-terminal="2">
-                <div class="terminal-header">
-                    <span class="terminal-dot active"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <h3>Docker PS</h3>
-                </div>
-                <div class="terminal-body">
-                    Просмотр запущенных контейнеров
-                </div>
-                <div class="terminal-label">Status check</div>
-                <div class="terminal-footer">
-                    <button class="terminal-replay">Replay</button>
-                </div>
-            </div>
-            <div class="terminal-card" data-terminal="3">
-                <div class="terminal-header">
-                    <span class="terminal-dot active"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <h3>Docker Logs</h3>
-                </div>
-                <div class="terminal-body">
-                    Просмотр логов контейнеров в реальном времени
-                </div>
-                <div class="terminal-label">Log viewing</div>
-                <div class="terminal-footer">
-                    <button class="terminal-replay">Replay</button>
-                </div>
-            </div>
-            <div class="terminal-card" data-terminal="4">
-                <div class="terminal-header">
-                    <span class="terminal-dot active"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <h3>Docker Restart</h3>
-                </div>
-                <div class="terminal-body">
-                    Перезапуск контейнеров при необходимости
-                </div>
-                <div class="terminal-label">Restart effect</div>
-                <div class="terminal-footer">
-                    <button class="terminal-replay">Replay</button>
-                </div>
-            </div>
-        </div>
+  </header>
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Учусь и строю практические проекты</p>
+        <h1>Привет, я Никита.<br><span>Изучаю DevOps на практике.</span></h1>
+        <p class="hero-lede">Разбираюсь, как упаковывать приложения в контейнеры, связывать сервисы и делать запуск воспроизводимым. Здесь — мои учебные проекты, конфигурации и заметки.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Смотреть проекты <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer">Профиль GitHub <span aria-hidden="true">↗</span></a></div>
+        <p class="honesty-note">Портфолио в процессе: показываю то, что уже собрал и могу объяснить.</p>
+      </div>
+      <div class="terminal" aria-label="Команда запуска учебного стека Docker Compose">
+        <div class="terminal-top"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>~/chapter4-realstack</span><span class="terminal-live">● local</span></div>
+        <pre><code><span class="prompt">$</span> docker compose up -d --build
+<span class="terminal-muted">[+] Running 3/3</span>
+ <span class="terminal-green">✔</span> Network realstack_default  Created
+ <span class="terminal-green">✔</span> Container realstack-redis-1  Healthy
+ <span class="terminal-green">✔</span> Container realstack-app-1    Started
+<span class="prompt">$</span> curl -s localhost:8080/ready
+<span class="terminal-green">{"status":"ok","redis":"connected"}</span>
+<span class="prompt">$</span> <span class="cursor" aria-hidden="true"></span></code></pre>
+        <div class="terminal-bottom"><span>Flask · Redis · Nginx</span><span>одна команда — весь стек</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> Листайте ниже</a>
     </section>
-                </div>
-<section class="projects" id="projects">
-        <div class="section-header">
-            <h2 class="section-title">Мои проекты</h2>
-            <div class="section-line"></div>
+    <section class="section shell" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / Обо мне</p><h2>Учусь через практику,<br><span>а не через красивые слова.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-copy">Я начинающий инженер, изучающий контейнеризацию и основы эксплуатации приложений. В этом репозитории собираю небольшие проекты: от статического сайта в Nginx до многоконтейнерного приложения с Flask, Redis и reverse proxy.</p>
+        <div class="principles">
+          <article><span>01</span><div><h3>Воспроизводимый запуск</h3><p>Сервисы описаны конфигурацией, а не набором ручных шагов.</p></div></article>
+          <article><span>02</span><div><h3>Понятная архитектура</h3><p>У каждого контейнера своя роль и явные зависимости.</p></div></article>
+          <article><span>03</span><div><h3>Честная документация</h3><p>Показываю текущий уровень проекта и то, что ещё предстоит улучшить.</p></div></article>
         </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon">📦</div>
-                <h3 class="project-title">Docker Portfolio Site</h3>
-                <p class="project-desc">Premium macOS-style DevOps portfolio веб-сайт, развернутый с помощью Docker и Nginx. Включает 6 секций с терминалами, проектами и контактами.</p>
-                <div class="project-links">
-                    <a href="#" class="project-link">GitHub</a>
-                    <a href="#" class="project-link">Live Demo</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-icon">🚀</div>
-                <h3 class="project-title">CI/CD Pipeline</h3>
-                <p class="project-desc">Автоматизированный пайплайн доставки кода с помощью GitHub Actions и Docker. Включает тестирование, сборку образов и деплой.</p>
-                <div class="project-links">
-                    <a href="#" class="project-link">GitHub</a>
-                    <a href="#" class="project-link">Live Demo</a>
-                </div>
-            </div>
-        </div>
-<section class="services" id="services">
-        <div class="section-header">
-            <h2 class="section-title">Мои услуги</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">⚙️</div>
-                <h3 class="service-title">Настройка инфраструктуры</h3>
-                <p class="service-desc">Настройка и оптимизация инфраструктуры на Docker, Kubernetes и облачных платформах (AWS, GCP, Yandex Cloud).</p>
-                <p class="service-price">от $50/час</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🔄</div>
-                <h3 class="service-title">CI/CD пайплайны</h3>
-                <p class="service-desc">Создание эффективных пайплайнов для автоматической сборки, тестирования и деплоя приложений.</p>
-                <p class="service-price">от $75/час</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📊</div>
-                <h3 class="service-title">Мониторинг и логирование</h3>
-                <p class="service-desc">Настройка системы мониторинга (Prometheus, Grafana) и централизованного логирования для инфраструктуры.</p>
-                <p class="service-price">от $60/час</p>
-            </div>
-        </div>
+      </div>
     </section>
-<section class="contacts" id="contact">
-        <div class="section-header">
-            <h2 class="section-title">Контакты</h2>
-            <div class="section-line"></div>
+    <section class="section projects-section" id="projects">
+      <div class="shell">
+        <div class="section-heading section-heading-row"><div><p class="eyebrow">02 / Лаборатория</p><h2>Проекты, которые<br><span>можно запустить.</span></h2></div><p class="section-aside">Небольшие учебные проекты — с исходным кодом, инструкциями и конкретным результатом.</p></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">PROJECT_01</span><span class="project-state"><i></i> Готов к запуску</span></div>
+            <div class="project-visual visual-stack" aria-hidden="true"><span class="stack-box">NGINX</span><b>→</b><span class="stack-box stack-box-accent">FLASK</span><b>→</b><span class="stack-box">REDIS</span></div>
+            <p class="project-type">Docker Compose · Python</p><h3>Real Stack</h3>
+            <p class="project-description">Учебный многоконтейнерный стек: Flask-приложение, Redis для счётчика запросов и Nginx как reverse proxy. Проверки здоровья помогают Compose дождаться готовности зависимостей.</p>
+            <ul class="project-tags"><li>Docker</li><li>Compose</li><li>Flask</li><li>Redis</li><li>Nginx</li></ul>
+            <div class="project-links"><a href="https://github.com/nikitautkin68-blip/devops-practice/blob/main/chapter4-realstack/README.md" target="_blank" rel="noreferrer">Инструкция <span aria-hidden="true">↗</span></a><a href="https://github.com/nikitautkin68-blip/devops-practice/tree/main/chapter4-realstack" target="_blank" rel="noreferrer">Исходный код <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">PROJECT_02</span><span class="project-state"><i></i> Готов к запуску</span></div>
+            <div class="project-visual visual-browser" aria-hidden="true"><div class="browser-bar"><i></i><i></i><i></i></div><div class="browser-content"><span>docker compose up</span><b>Сайт работает в контейнере</b><small>Nginx · порт 8080</small></div></div>
+            <p class="project-type">Docker · Nginx</p><h3>Compose Demo</h3>
+            <p class="project-description">Минимальный пример упаковки статического сайта в Docker-образ Nginx и запуска через Compose.</p>
+            <ul class="project-tags"><li>Dockerfile</li><li>Nginx</li><li>Compose</li></ul>
+            <div class="project-links"><a href="https://github.com/nikitautkin68-blip/devops-practice/blob/main/compose-demo/README.md" target="_blank" rel="noreferrer">Инструкция <span aria-hidden="true">↗</span></a><a href="https://github.com/nikitautkin68-blip/devops-practice/tree/main/compose-demo" target="_blank" rel="noreferrer">Исходный код <span aria-hidden="true">↗</span></a></div>
+          </article>
         </div>
-        <div class="contact-info">
-            <div class="contact-item">
-                <span class="contact-label">GitHub</span>
-                <span class="contact-value">github.com/nikitautkin</span>
-            </div>
-            <div class="contact-item">
-                <span class="contact-label">Email</span>
-                <span class="contact-value">nikita@example.com</span>
-            </div>
-            <div class="contact-item">
-                <span class="contact-label">Telegram</span>
-                <span class="contact-value">@nikitautkin</span>
-            </div>
-        </div>
-        <div class="social-links">
-            <a href="#" class="social-link">GitHub</a>
-            <a href="#" class="social-link">LinkedIn</a>
-            <a href="#" class="social-link">Telegram</a>
-        </div>
+      </div>
     </section>
-
-    <footer class="footer">
-        <p>2026 Nikita Utkin. All rights reserved.</p>
-    </footer>
-
-    <script src="js/main.js"></script>
+    <section class="section shell" id="stack">
+      <div class="section-heading"><p class="eyebrow">03 / Инструменты</p><h2>Изучаю и применяю<br><span>в собственных проектах.</span></h2></div>
+      <div class="stack-grid">
+        <article><span class="stack-icon">01</span><h3>Контейнеры</h3><p>Docker · Docker Compose</p><small>Сборка образов, volumes, сети, healthcheck</small></article>
+        <article><span class="stack-icon">02</span><h3>Веб-сервисы</h3><p>Nginx · Flask · Python</p><small>Статическая раздача, reverse proxy, HTTP</small></article>
+        <article><span class="stack-icon">03</span><h3>Данные</h3><p>Redis</p><small>Подключение сервиса и проверка готовности</small></article>
+        <article><span class="stack-icon">04</span><h3>Инструменты</h3><p>Git · GitHub</p><small>История изменений и публикация проекта</small></article>
+      </div>
+      <div class="learning-note"><span aria-hidden="true">↗</span><p><strong>Сейчас в фокусе:</strong> Linux, сети контейнеров, автоматизация проверок и основы CI/CD. Добавляю инструменты в список по мере того, как могу подтвердить их практикой.</p></div>
     </section>
-            </div>
+    <section class="contact-section" id="contact">
+      <div class="shell contact-inner"><p class="eyebrow">04 / На связи</p><h2>Посмотрите код.<br><span>Задайте вопрос.</span></h2><p>Буду рад обратной связи по проектам и новым задачам для практики.</p><a class="button button-primary" href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer">Найти меня на GitHub <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="#top">NU<span>.</span></a><p>Собрано с любопытством и Docker Compose.</p><a href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer">GitHub ↗</a><span>© <span id="year">2026</span> Никита Уткин</span></footer>
+</body>
+</html>
