@@ -3,41 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Никита — DevOps Engineer</title>
+    <title>Nikita Utkin - DevOps Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Никита Уткин</h1>
-            <p>Junior DevOps Engineer</p>
-        </nav>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-logo">N.U.</div>
+        <ul class="navbar-links">
+            <li><a href="#hero" class="nav-link">Главная</a></li>
+            <li><a href="#about" class="nav-link">Обо мне</a></li>
+            <li><a href="#work" class="nav-link">Как работает</a></li>
+            <li><a href="#projects" class="nav-link">Проекты</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-badge">DevOps Engineer</div>
+            <h1 class="hero-name">Nikita<br>Utkin</h1>
+            <h2 class="hero-title">Junior DevOps Engineer</h2>
+            <p class="hero-subtitle">Automating infrastructure • Learning fast and reliable code delivery</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Мои проекты →</a>
+                <a href="#contact" class="btn btn-secondary">Контакты</a>
+            </div>
+        </div>
     </header>
 
-    <section class="about">
-        <h2>Обо мне</h2>
-        <p>Начинающий DevOps-специалист. Учусь автоматизировать процессы, работать с Docker, Git и Linux. 
-           Готов учиться и расти вместе с командой.</p>
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Привет! Я Никита, Junior DevOps Engineer, который увлечен автоматизацией и надежностью ПО. Я работаю с Docker, Kubernetes, CI/CD пайплайнами и инфраструктурой в облаке.</p>
+                <p>Мое'objectif — создавать эффективные и безопасные системы доставки кода, обеспечивая бесперебойную работу сервисов. Я постоянно развиваю свои навыки и отслеживаю последние тренды в индустрии.</p>
+                <div class="skills-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">Terraform</span>
+<section class="work" id="work">
+        <div class="section-header">
+            <h2 class="section-title">Как работает DevOps</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="terminals-container">
+            <div class="terminal-card" data-terminal="1">
+                <div class="terminal-header">
+                    <span class="terminal-dot active"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <h3>Docker Compose Up</h3>
+                </div>
+                <div class="terminal-body">
+                    Автоматическое поднятие контейнеров с помощью docker compose up
+                </div>
+                <div class="terminal-label">Auto-typing effect</div>
+                <div class="terminal-footer">
+                    <button class="terminal-replay">Replay</button>
+                </div>
+            </div>
+            <div class="terminal-card" data-terminal="2">
+                <div class="terminal-header">
+                    <span class="terminal-dot active"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <h3>Docker PS</h3>
+                </div>
+                <div class="terminal-body">
+                    Просмотр запущенных контейнеров
+                </div>
+                <div class="terminal-label">Status check</div>
+                <div class="terminal-footer">
+                    <button class="terminal-replay">Replay</button>
+                </div>
+            </div>
+            <div class="terminal-card" data-terminal="3">
+                <div class="terminal-header">
+                    <span class="terminal-dot active"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <h3>Docker Logs</h3>
+                </div>
+                <div class="terminal-body">
+                    Просмотр логов контейнеров в реальном времени
+                </div>
+                <div class="terminal-label">Log viewing</div>
+                <div class="terminal-footer">
+                    <button class="terminal-replay">Replay</button>
+                </div>
+            </div>
+            <div class="terminal-card" data-terminal="4">
+                <div class="terminal-header">
+                    <span class="terminal-dot active"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <h3>Docker Restart</h3>
+                </div>
+                <div class="terminal-body">
+                    Перезапуск контейнеров при необходимости
+                </div>
+                <div class="terminal-label">Restart effect</div>
+                <div class="terminal-footer">
+                    <button class="terminal-replay">Replay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+<section class="projects" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">📦</div>
+                <h3 class="project-title">Docker Portfolio Site</h3>
+                <p class="project-desc">Premium macOS-style DevOps portfolio веб-сайт, развернутый с помощью Docker и Nginx. Включает 6 секций с терминалами, проектами и контактами.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">GitHub</a>
+                    <a href="#" class="project-link">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">🚀</div>
+                <h3 class="project-title">CI/CD Pipeline</h3>
+                <p class="project-desc">Автоматизированный пайплайн доставки кода с помощью GitHub Actions и Docker. Включает тестирование, сборку образов и деплой.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">GitHub</a>
+                    <a href="#" class="project-link">Live Demo</a>
+                </div>
+            </div>
+        </div>
+<section class="services" id="services">
+        <div class="section-header">
+            <h2 class="section-title">Мои услуги</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3 class="service-title">Настройка инфраструктуры</h3>
+                <p class="service-desc">Настройка и оптимизация инфраструктуры на Docker, Kubernetes и облачных платформах (AWS, GCP, Yandex Cloud).</p>
+                <p class="service-price">от $50/час</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3 class="service-title">CI/CD пайплайны</h3>
+                <p class="service-desc">Создание эффективных пайплайнов для автоматической сборки, тестирования и деплоя приложений.</p>
+                <p class="service-price">от $75/час</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3 class="service-title">Мониторинг и логирование</h3>
+                <p class="service-desc">Настройка системы мониторинга (Prometheus, Grafana) и централизованного логирования для инфраструктуры.</p>
+                <p class="service-price">от $60/час</p>
+            </div>
+        </div>
+    </section>
+<section class="contacts" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Контакты</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/nikitautkin</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">nikita@example.com</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Telegram</span>
+                <span class="contact-value">@nikitautkin</span>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Telegram</a>
+        </div>
     </section>
 
-    <section class="skills">
-        <h2>Навыки</h2>
-        <ul>
-            <li>Git & GitHub</li>
-            <li>Linux (командная строка)</li>
-            <li>Docker (в процессе)</li>
-            <li>Terminal + Bash</li>
-            <li>Основы CI/CD</li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <h2>Проекты</h2>
-        <p>Этот сайт-портфолио — один из моих первых проектов.</p>
-    </section>
-
-    <footer>
-        <p>Связаться со мной: nikitautkin68@gmail.com</p>
+    <footer class="footer">
+        <p>2026 Nikita Utkin. All rights reserved.</p>
     </footer>
-</body>
-</html>
+
+    <script src="js/main.js"></script>
+    </section>
+            </div>
