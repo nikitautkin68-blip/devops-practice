@@ -1,0 +1,10 @@
+**/.git
+**/.github
+**/node_modules
+**/__pycache__
+**/.DS_Store
+**/.idea
+**/.vscode
+**/venv
+README.md
+www/README.md

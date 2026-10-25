@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Demo App</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .status { padding: 10px; margin: 20px 0; border-radius: 5px; }
+        .healthy { background: #28a745; color: white; }
+        .unhealthy { background: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Docker Compose Demo</h1>
+        <p>Nginx reverse proxy с backend приложением</p>
+        <div id="status" class="status healthy">Загрузка...</div>
+        <p>Доступно по адресу: <code>http://localhost:8080</code></p>
+    </div>
+
+    <script>
+        // Проверка здоровья сервера
+        fetch('/_health')
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('status').className = 'status healthy';
+                    document.getElementById('status').textContent = 'Сервер работает';
+                }
+            })
+            .catch(() => {
+                document.getElementById('status').className = 'status unhealthy';
+                document.getElementById('status').textContent = 'Сервер недоступен';
+            });
+    </script>
+</body>
+</html>

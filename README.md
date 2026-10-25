@@ -1,35 +1,24 @@
-# Никита Уткин — DevOps-портфолио
+# DevOps-практика Никиты Уткина
 
-Личный сайт-портфолио и лаборатория практических проектов по контейнеризации. Это учебный репозиторий: технологии в описании соответствуют тому, что действительно реализовано в коде.
+Учебный репозиторий с проектами по Docker, Docker Compose, Nginx, Flask и Redis. Портфолио находится в папке [`www/`](./www/); оно предназначено для запуска только на этом компьютере и не публикуется автоматически в интернете.
 
-**Профиль:** [github.com/nikitautkin68-blip](https://github.com/nikitautkin68-blip) · **Адрес сайта после включения GitHub Pages:** `https://nikitautkin68-blip.github.io/devops-practice/`
+## Запустить сайт-портфолио на своём компьютере
 
-## Проекты
+Нужен установленный Python 3. Из корневой папки репозитория выполните:
 
-| Проект | Что показывает | Запуск |
-| --- | --- | --- |
-| [Real Stack](./chapter4-realstack/) | Flask, Redis, Nginx reverse proxy, health checks, persistent volume | `cd chapter4-realstack && docker compose up --build` |
-| [Compose Demo](./compose-demo/) | Статический сайт в Nginx, Dockerfile и Docker Compose | `cd compose-demo && docker compose up --build` |
-
-Откройте `http://localhost:8080` после запуска любого примера. Инструкции и команды проверки находятся в README соответствующего проекта.
-
-## Публикация портфолио
-
-Сайт — статические HTML, CSS и JavaScript-файлы в корне репозитория. GitHub Actions автоматически публикует их на GitHub Pages при push в `main`.
-
-1. В GitHub откройте **Settings → Pages**.
-2. Выберите **Build and deployment → Source → GitHub Actions**.
-3. Отправьте изменения в ветку `main` и проверьте результат во вкладке **Actions**.
-
-## Структура
-
-```text
-.
-├── .github/workflows/deploy-pages.yml
-├── chapter4-realstack/     # Flask + Redis + Nginx
-├── compose-demo/           # статический сайт в Nginx
-├── css/                    # стили портфолио
-├── js/                     # мобильное меню и год в футере
-├── index.html
-└── DEVOPS-SHPARGLKA.md     # личные заметки по изучаемым командам
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1 --directory www
 ```
+
+Откройте в браузере <http://localhost:8000>. Сервер работает только на вашем компьютере. Чтобы остановить его, вернитесь в окно терминала и нажмите `Ctrl+C`.
+
+Подробная инструкция, в том числе для Windows и VS Code, находится в [`www/README.md`](./www/README.md).
+
+## Учебные проекты
+
+| Проект | Что изучается | Инструкция |
+| --- | --- | --- |
+| Real Stack | Flask, Redis, Nginx reverse proxy, health checks, Docker volume | [README](./chapter4-realstack/README.md) |
+| Compose Demo | Статический сайт в Nginx, Dockerfile и Docker Compose | [README](./compose-demo/README.md) |
+
+Эти проекты запускаются отдельно от портфолио; для них требуется Docker. В папке сайта Docker не нужен.

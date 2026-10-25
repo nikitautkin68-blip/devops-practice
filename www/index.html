@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Никита Уткин — DevOps инженер. Портфолио, Docker, CI/CD, Linux, инфраструктура." />
+    <title>Никита Уткин | DevOps Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo" aria-label="Главная страница">
+                <span class="logo-mark">NK</span>
+                <span class="logo-text">Никита Уткин</span>
+            </a>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#hero">Главная</a>
+                <a href="#about">Обо мне</a>
+                <a href="#stack">Стек</a>
+                <a href="#terminals">Демо</a>
+                <a href="#projects">Проекты</a>
+                <a href="#services">Услуги</a>
+                <a href="#contact">Контакты</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" type="button" aria-label="Переключить тему">
+                    <span class="theme-icon sun">☀️</span>
+                    <span class="theme-icon moon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Никита Уткин</h1>
+                    <p class="hero-occupation">Junior DevOps Engineer</p>
+                    <p class="hero-subtitle">
+                        Автоматизирую инфраструктуру, упрощаю деплой и делаю так, чтобы код
+                        <span class="accent">попадал в продакшен быстро и без лишних рисков.</span>
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#terminals" class="btn btn-primary">
+                            <span class="btn-icon">▶</span>
+                            Смотреть демо
+                        </a>
+                        <button class="btn btn-secondary" type="button" data-contact-open>
+                            <span class="btn-icon">✉</span>
+                            Написать
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-line"></span>
+                    <h2 class="section-title">Обо мне</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="about-desc">
+                            Изучаю и применяю современный DevOps стек: Git, Linux, Docker, Docker Compose,
+                            Nginx, Bash и мониторинг. Строю среды, в которых приложение легко запускается,
+                            обновляется и поддерживается.
+                        </p>
+                        <p class="about-desc">
+                            Сейчас мой путь — перейти от учебных проектов к реальной инженерной работе,
+                            где можно решать практические задачи инфраструктуры, CI/CD и автоматизации.
+                        </p>
+                        <div class="skills">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Docker Compose</span>
+                            <span class="skill-tag">Nginx</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-card-header">Что я умею</div>
+                        <ul class="about-list">
+                            <li>Поднимать приложения в Docker</li>
+                            <li>Собирать рабочие Compose-стеки</li>
+                            <li>Настраивать Nginx и reverse proxy</li>
+                            <li>Писать Bash-скрипты для автоматизации</li>
+                            <li>Решать задачи CI/CD и деплоя</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stack" id="stack">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-line"></span>
+                    <h2 class="section-title">Технологический стек</h2>
+                </div>
+                <div class="stack-grid">
+                    <div class="stack-item">
+                        <div class="stack-icon">🐳</div>
+                        <div class="stack-name">Docker / Compose</div>
+                        <div class="stack-desc">Контейнеризация и запуск сервисов локально и в средах разработки.</div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon">🛡️</div>
+                        <div class="stack-name">Linux / Bash</div>
+                        <div class="stack-desc">Автоматизация, обслуживание серверов и работа с системными процессами.</div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon">🌐</div>
+                        <div class="stack-name">Nginx</div>
+                        <div class="stack-desc">Реверс-прокси, веб-сервер и маршрутизация трафика.</div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon">⚡</div>
+                        <div class="stack-name">Git / GitHub</div>
+                        <div class="stack-desc">Команды, ветки, ревью и управление жизненным циклом проекта.</div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon">🧠</div>
+                        <div class="stack-name">Python / Flask</div>
+                        <div class="stack-desc">Разработка API и сервисов, которые запускаются в контейнере.</div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-icon">🗄️</div>
+                        <div class="stack-name">Redis</div>
+                        <div class="stack-desc">Кэширование, хранение состояния и простые высокоскоростные сервисы.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section terminals" id="terminals">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-line"></span>
+                    <h2 class="section-title">Живые демо терминалов</h2>
+                    <p class="section-subtitle">Примеры реальных DevOps-задач и рабочих команд в формате терминала.</p>
+                </div>
+
+                <div class="terminals-grid">
+                    <div class="terminal-window" data-terminal="1">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="terminal-body" data-terminal-content="1">
+                            <div class="terminal-cursor"></div>
+                            <pre class="terminal-output"></pre>
+                        </div>
+                        <div class="terminal-footer">
+                            <button class="terminal-replay" type="button" data-replay="1">Replay</button>
+                        </div>
+                        <div class="terminal-label">Терминал 1 — запуск инфраструктуры</div>
+                    </div>
+
+                    <div class="terminal-window" data-terminal="2">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="terminal-body" data-terminal-content="2">
+                            <div class="terminal-cursor"></div>
+                            <pre class="terminal-output"></pre>
+                        </div>
+                        <div class="terminal-footer">
+                            <button class="terminal-replay" type="button" data-replay="2">Replay</button>
+                        </div>
+                        <div class="terminal-label">Терминал 2 — проверка сервисов</div>
+                    </div>
+
+                    <div class="terminal-window" data-terminal="3">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="terminal-body" data-terminal-content="3">
+                            <div class="terminal-cursor"></div>
+                            <pre class="terminal-output"></pre>
+                        </div>
+                        <div class="terminal-footer">
+                            <button class="terminal-replay" type="button" data-replay="3">Replay</button>
+                        </div>
+                        <div class="terminal-label">Терминал 3 — логи и отладка</div>
+                    </div>
+
+                    <div class="terminal-window" data-terminal="4">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="terminal-body" data-terminal-content="4">
+                            <div class="terminal-cursor"></div>
+                            <pre class="terminal-output"></pre>
+                        </div>
+                        <div class="terminal-footer">
+                            <button class="terminal-replay" type="button" data-replay="4">Replay</button>
+                        </div>
+                        <div class="terminal-label">Терминал 4 — деплой и перезапуск</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-line"></span>
+                    <h2 class="section-title">Проекты</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">📦</div>
+                        <h3 class="project-title">DevOps Practice Stack</h3>
+                        <p class="project-desc">
+                            Docker Compose стек с Flask, Redis, Nginx и базовой структурой для локального
+                            запуска и проверки инфраструктуры.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🌐</div>
+                        <h3 class="project-title">Локальный портфолио сайт</h3>
+                        <p class="project-desc">
+                            Минималистичный DevOps сайт с тёмной эстетикой, живыми терминалами, секциями
+                            о навыках и возможностью быстро рассказать о себе.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">⚙️</div>
+                        <h3 class="project-title">Автоматизация окружений</h3>
+                        <p class="project-desc">
+                            Практика по автоматизации запуска сервисов, настройке health checks и управлению
+                            контейнерным окружением через команды и скрипты.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-line"></span>
+                    <h2 class="section-title">Услуги и задачи</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🐳</div>
+                        <h3 class="service-title">Docker / Docker Compose</h3>
+                        <p class="service-desc">Поднятие и настройка контейнеров, сетей и сервисов для локальной и продакшн среды.</p>
+                        <p class="service-price">от 15 000 ₽</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3 class="service-title">CI/CD и деплой</h3>
+                        <p class="service-desc">Автоматизация сборки, проверки и деплоя через пайплайны и простые рабочие процессы.</p>
+                        <p class="service-price">от 25 000 ₽</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧰</div>
+                        <h3 class="service-title">Поддержка инфраструктуры</h3>
+                        <p class="service-desc">Настройка окружений, логов, health checks и базовых инструментов для стабильной работы.</p>
+                        <p class="service-price">от 35 000 ₽</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💬</div>
+                        <h3 class="service-title">Консультация</h3>
+                        <p class="service-desc">Разбор архитектуры, рекомендации по стеку, помощь в проектировании и оптимизации процессов.</p>
+                        <p class="service-price">5 000 ₽ / час</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-line"></span>
+                    <h2 class="section-title">Контакты</h2>
+                    <p class="section-subtitle">Готов к задачам по автоматизации, инфраструктуре и запуску сервисов.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">✉ Email:</span>
+                            <a href="mailto:nikitautkin68@gmail.com" class="contact-value">nikitautkin68@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">💻 GitHub:</span>
+                            <a href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer" class="contact-value">github.com/nikitautkin68-blip</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">📱 Telegram:</span>
+                            <a href="https://t.me/uswetis" target="_blank" rel="noreferrer" class="contact-value">@uswetis</a>
+                        </div>
+
+                        <button class="btn btn-primary btn-wide" type="button" data-contact-open>
+                            <span class="btn-icon">✉</span>
+                            Написать мне
+                        </button>
+                    </div>
+
+                    <aside class="contact-social">
+                        <h4>Ссылки</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer" class="social-link">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://t.me/uswetis" target="_blank" rel="noreferrer" class="social-link">
+                                <span>Telegram</span>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Никита Уткин</p>
+            <p>DevOps Portfolio · Local portfolio</p>
+        </div>
+    </footer>
+
+    <div class="contact-modal" id="contactModal" aria-hidden="true">
+        <div class="contact-modal-card" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+            <div class="modal-header">
+                <h3 id="contactModalTitle">Связаться со мной</h3>
+                <button class="modal-close" type="button" data-close-modal aria-label="Закрыть">✕</button>
+            </div>
+            <div class="contact-modal-list">
+                <div class="contact-modal-item">
+                    <span>Email</span>
+                    <a href="mailto:nikitautkin68@gmail.com">nikitautkin68@gmail.com</a>
+                </div>
+                <div class="contact-modal-item">
+                    <span>Telegram</span>
+                    <a href="https://t.me/uswetis" target="_blank" rel="noreferrer">@uswetis</a>
+                </div>
+                <div class="contact-modal-item">
+                    <span>GitHub</span>
+                    <a href="https://github.com/nikitautkin68-blip" target="_blank" rel="noreferrer">github.com/nikitautkin68-blip</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=4"></script>
+</body>
+</html>
